@@ -1,0 +1,4 @@
+- name: chamando a minha role do servidor web 
+  hosts: all 
+  roles: 
+   - web 

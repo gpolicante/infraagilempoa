@@ -1,0 +1,8 @@
+---
+# tasks file for web
+
+- name: instalando servidor web 
+  include: install.yaml 
+
+- name: configurando site
+  include: config.yaml 

@@ -1,0 +1,27 @@
+--- 
+- name: a playbook de exercicio 
+  hosts: all 
+  tasks:
+   - name: instalando pacotes genericos 
+     package:
+      name: 
+       - vim 
+       - htop 
+       - cowsay
+       - figlet 
+      state: present 
+
+   - name: instalando pacotes somente no debian 
+     package:
+      name: 
+       - apache2 
+     when: ansible_os_family == "Debian" 
+
+
+   - name: instalando pacotes somente no RedHat 
+     package:
+      name: 
+       - httpd
+       - epel-release
+     when: ansible_os_family == "RedHat" 
+

@@ -1,0 +1,23 @@
+--- 
+- name: nome da playbook 
+  hosts: all 
+  tasks: 
+   - name: primeiro item da lista 
+     user: 
+      name: devops
+      password: '$1$qFJDX20B$HLvQYhRhf.kW4v1cGol9N/'
+      shell: /bin/bash
+
+
+   - name: primeiro item da lista 
+     user: 
+      name: developer
+      password: '$1$qFJDX20B$HLvQYhRhf.kW4v1cGol9N/'
+      shell: /bin/bash
+
+
+   - name: primeiro item da lista 
+     user: 
+      name: gabriel
+      password: '$1$qFJDX20B$HLvQYhRhf.kW4v1cGol9N/'
+      shell: /bin/bash

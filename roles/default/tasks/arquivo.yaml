@@ -1,0 +1,8 @@
+
+- name: copiando os arquivos padroes para as maquinas 
+  copy: 
+   src: "{{item.origem}}"
+   dest: "{{item.destino}}" 
+  with_items: 
+   - { origem: files/hosts, destino: /etc/hosts }
+   - { origem: files/resolv, destino: /etc/resolv.conf }

@@ -1,0 +1,8 @@
+
+- name: instalando o docker na maquina docker brueueue
+  hosts: docker 
+  tasks: 
+   - name: instalando o docker 
+     shell: |
+      curl -fsSL https://get.docker.com -o get-docker.sh
+      sh get-docker.sh 

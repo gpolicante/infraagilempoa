@@ -1,0 +1,13 @@
+127.0.0.1	localhost
+127.0.1.1	devops.localhost
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+192.168.200.1   desktop.dexter.com.br     desktop
+192.168.200.10  automation.dexter.com.br  automation
+192.168.200.50  docker.dexter.com.br      docker
+192.168.200.100 devops.dexter.com.br      devops
